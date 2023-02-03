@@ -32,7 +32,10 @@ body {
 }
 
 /*----------------Section 1,Hero Img---------------------*/
-.section-1 .img-content img {
+.section-1 .img-content {
+  width: 100%;
+}
+.section-1 .img-content picture > * {
   width: 100%;
 }
 
@@ -300,8 +303,22 @@ body {
   }
 }
 .section-5 .flex-container .column {
+  position: relative;
   width: 31%;
   text-align: center;
+}
+.section-5 .flex-container .column :before {
+  content: "";
+  background-image: url(/image/quote-left-solid.svg);
+  background-position: 70px 180px;
+  background-repeat: no-repeat;
+  background-size: 5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.017;
 }
 @media (max-width: 1080px) {
   .section-5 .flex-container .column {

@@ -26,14 +26,21 @@
     <!-------------------Section 1, Hero Image----------------->
     <section class="sect section-1">
       <div class="img-content">
-        <img src="/image/ladyDesktop.jpg" alt="img" class="main-img" />
+        <picture>
+          <source
+            media="(max-width: 700px)"
+            srcset="/image/ladyMobile.jpg"
+            alt=""
+          />
+          <img src="/image/ladyDesktop.jpg" alt="img" class="main-img" />
+        </picture>
       </div>
     </section>
     <!-------------------Section 2--------------------------->
     <section class="sect section-2">
       <div class="container">
         <p class="title">Our investment in you.</p>
-        <p class="bottom-line"></p>
+        <div class="bottom-line"></div>
         <p class="paragraph">
           As a Mortgage Loan Officer with Citizens, you'll work directly with
           your customers, walking them through our unique product suit. You'll
@@ -49,7 +56,7 @@
     <section class="sect section-3">
       <div class="container">
         <p class="title">Get the Citizens advantage.</p>
-        <p class="bottom-line"></p>
+        <div class="bottom-line"></div>
         <!------------------------Flexbox container 1------------------------->
         <div class="flexbox-container">
           <div class="product col padding-right">
