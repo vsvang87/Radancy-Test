@@ -35,11 +35,6 @@ body {
 .section-1 .img-content img {
   width: 100%;
 }
-@media (max-width: 550px) {
-  .section-1 .img-content img {
-    position: relative;
-  }
-}
 
 /*-----------------Section 2,----------------------------*/
 .section-2 {

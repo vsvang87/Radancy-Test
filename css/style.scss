@@ -39,10 +39,6 @@ body {
     .img-content {
         img {
             width: 100%;
-            @include mediaQuery550(){
-                position: relative;
-                
-            }
         }
     }
 }
