@@ -4,19 +4,29 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-------------Font awesome CDN-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="/css/style.css" />
     <title>Citizens Bank</title>
   </head>
   <body>
     <header class="header">
       <div class="container">
-        <img src="/image/logo.jpg" alt="citizen bank logo" class="logo" />
+        <div class="logo-content">
+          <img src="/image/logo.jpg" alt="citizen bank logo" class="logo" />
+        </div>
       </div>
     </header>
     <!-------------------Section 1, Hero Image----------------->
     <section class="sect section-1">
       <div class="img-content">
-        <img src="/image/ladyDesktop.jpg" alt="img" />
+        <img src="/image/ladyDesktop.jpg" alt="img" class="main-img" />
       </div>
     </section>
     <!-------------------Section 2--------------------------->
@@ -40,21 +50,24 @@
       <div class="container">
         <p class="title">Get the Citizens advantage.</p>
         <p class="bottom-line"></p>
-        <!------------------------Grid layout------------------------->
-        <div class="grid">
-          <div class="product col">
-            <p class="sub-title">Unique products</p>
+        <!------------------------Flexbox container 1------------------------->
+        <div class="flexbox-container">
+          <div class="product col padding-right">
+            <p class="subtitle">Unique products</p>
             <p>
               Our loan programs offer a variety of solutions to help you compete
               effectively across a broad spectrum of borrowers. With our strong
               balance sheet, we can offer great conventional and portfolio loan
               products that give you a competitive edge.
             </p>
-            <a href="#">Learn more about our products. ></a>
+            <a href="#" class="green-link"
+              >Learn more about our products.
+              <i class="fa-solid fa-chevron-right"></i
+            ></a>
           </div>
 
-          <div class="support col col-left">
-            <p class="sub-title">Exceptional support</p>
+          <div class="support col left-padding">
+            <p class="subtitle">Exceptional support</p>
             <p>
               We'll support you in generating leads and marketing, as well as
               implementing technology and secondary marketing. Our Lead
@@ -63,8 +76,11 @@
               customers.
             </p>
           </div>
-          <div class="closing col">
-            <p class="sub-title">Closing on-time, every time</p>
+        </div>
+        <!--------------------Flexbox container 2--------------------->
+        <div class="flexbox-container-2">
+          <div class="closing col padding-right">
+            <p class="subtitle">Closing on-time, every time</p>
             <p>
               We expanded our regional operations centers to help to support you
               and take car of paperwork during closing time. Our one-team "pod"
@@ -72,8 +88,8 @@
               referral sources.
             </p>
           </div>
-          <div class="voice col col-left">
-            <p class="sub-title">You'll have a voice</p>
+          <div class="voice col left-padding">
+            <p class="subtitle">You'll have a voice</p>
             <p>
               In order to give our customers the best service, we'll give you a
               real voice in how we operate. Through our Sales Advisory Board,
@@ -102,5 +118,79 @@
         </div>
       </div>
     </section>
+    <!-----------------------Section 5, Quotes-------------------------->
+    <section class="sect section-5">
+      <div class="container">
+        <div class="flex-container">
+          <div class="loan-officer-1 column">
+            <img src="/image/bankImg1_2.jpg" alt="loan officer image" />
+            <p class="quote">
+              "Citizens Bank is in a growth mode. We're planning to be around
+              for the long term and we're proving that by growing sales."
+            </p>
+            <div class="loan-officer">
+              <p>-Ed, Mortgage Loan</p>
+              <p>Officer in Buffalo</p>
+            </div>
+          </div>
+          <div class="loan-officer-2 column">
+            <img src="/image/bankImg2_2.jpg" alt="loan officer image" />
+            <p class="quote">
+              "The senior management is very committed to the mortgage lending
+              business on every level-from the top, down. We're all going in the
+              same direction and that's what I like. So, if I have a question or
+              idea, I can get answers. They listen and we get things done. They
+              are really investigating to grow the mortgage business."
+            </p>
+            <div class="loan-officer">
+              <p>-Mark, Senior Mortgage</p>
+              <p>Officer in Chicago</p>
+            </div>
+          </div>
+          <div class="loan-officer-1 column">
+            <img src="/image/bankImg3_2.jpg" alt="loan officer image" />
+            <p class="quote">
+              "It is so great to be part of an organization that is looking for
+              solutions and creativity versus creating barriers that cause
+              problems."
+            </p>
+            <div class="loan-officer">
+              <p>-John, Mortgage Loan</p>
+              <p>Officer in Charleston</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-------------------------------Line across------------------------>
+    <div class="line-across"></div>
+    <!-------------------------------Footer------------------------------>
+    <footer class="footer">
+      <div class="container">
+        <div class="social-icon-content">
+          <img src="/image/social-icons.jpg" alt="social icons" />
+        </div>
+        <p class="policy-paragraph">
+          It is the policy of Citizens Bank to provide equal employment and
+          advancement opportunities to all colleagues and applicants for
+          employment without regard to race, color, ethnicity, religion, gender,
+          pregnancy, age, national origin, sexual orientations, gender identity
+          or expression, disability or perceived disability, genetic
+          information, citizenship, veteran or military status, marital or
+          domestic partner status, or any category protected by federal state
+          and or local laws. Equal opportunity & Affirmative Action Employer
+          Disabled/Veteran-Citizens Bank is a brand name of Citizens Bank, N.A.
+          and each of its respective subsidiaries and Citizens Bank of
+          Pennsylvania.
+          <a href="#" class="link"
+            >Click here to review "EEO is The Law" poster.</a
+          >
+          For additional information <a href="#" class="link">click here</a>
+        </p>
+        <p class="bold-text">
+          Privacy Statement <span class="middle-line">|</span> Site Map
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
